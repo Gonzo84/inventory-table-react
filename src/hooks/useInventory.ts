@@ -4,6 +4,7 @@ import useInventoryStore from '../store/Inventory.store';
 
 export function useInventory() {
     const inventory = useInventoryStore(state => state.inventory);
+    const regions = useInventoryStore(state => state.regions);
 
     const fetchInventory = useCallback(async () => {
         await getAllInventory();
@@ -14,6 +15,7 @@ export function useInventory() {
     }, [fetchInventory]);
 
     return {
-        inventory
+        inventory,
+        regions
     };
 }

@@ -2,7 +2,7 @@ type ExpendableButtonProps = {
     isOpen: boolean;
     toggle: () => void;
 };
-const ExpendableButton = ({isOpen, toggle}: ExpendableButtonProps) => {
+const ExpendableButtonComponent = ({isOpen, toggle}: ExpendableButtonProps) => {
     return (
         <button onClick={toggle} className="flex flex-col justify-center items-center">
       <span
@@ -17,4 +17,4 @@ const ExpendableButton = ({isOpen, toggle}: ExpendableButtonProps) => {
         </button>
     );
 };
-export default ExpendableButton;
+export default ExpendableButtonComponent;
