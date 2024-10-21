@@ -64,11 +64,13 @@
           "gross_revenue": 9197736
         }
       ],
+      "legal_entity": "11",
       "inventory": [
         {
           "label": "Bikes",
           "id": "random_id_002",
           "version": "actual",
+          "legal_entity": "11",
           "regions": [
             {
               "key": "DE",
@@ -97,6 +99,7 @@
               "label": "Mountain Bikes",
               "id": "random_id_003",
               "version": "actual",
+              "legal_entity": "12",
               "regions": [
                 {
                   "key": "DE",
@@ -125,6 +128,7 @@
               "label": "Road Bikes",
               "id": "random_id_004",
               "version": "actual",
+              "legal_entity": "12",
               "regions": [
                 {
                   "key": "DE",
@@ -153,6 +157,7 @@
               "label": "City Bikes",
               "id": "random_id_005",
               "version": "actual",
+              "legal_entity": "11",
               "regions": [
                 {
                   "key": "DE",
@@ -183,6 +188,7 @@
           "label": "Complementary Products",
           "id": "random_id_006",
           "version": "actual",
+          "legal_entity": "13",
           "regions": [
             {
               "key": "DE",
@@ -211,6 +217,7 @@
               "label": "Accessories",
               "id": "random_id_007",
               "version": "actual",
+              "legal_entity": "13",
               "regions": [
                 {
                   "key": "DE",
@@ -239,6 +246,7 @@
               "label": "Clothing",
               "id": "random_id_008",
               "version": "actual",
+              "legal_entity": "13",
               "regions": [
                 {
                   "key": "DE",
@@ -267,6 +275,7 @@
               "label": "Services",
               "id": "random_id_009",
               "version": "actual",
+              "legal_entity": "13",
               "regions": [
                 {
                   "key": "DE",
@@ -297,6 +306,7 @@
           "label": "Subscription",
           "id": "random_id_010",
           "version": "actual",
+          "legal_entity": "13",
           "regions": [
             {
               "key": "DE",

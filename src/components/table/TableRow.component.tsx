@@ -22,14 +22,13 @@ const TableRowComponent = ({
                                nestedLevel = 0,
                            }: TableRowProps) => {
 
-    const {regions, filters} = useInventoryStore();
+    const {regions, filteredRegions} = useInventoryStore();
 
     const getNestedLevelStyling = useCallback(() => {
         return nestedLevel ? {paddingLeft: `${nestedLevel * 32}px`} : {};
     }, [nestedLevel]);
     const isRegionFiltered = (item: RegionDataType) => {
-        const regionFilters = filters.filter(filter => filter.type === "region");
-        return regionFilters.some(filter => {
+        return filteredRegions.some(filter => {
             return item.key.toLowerCase().includes(filter.key.toLowerCase());
         });
     }
@@ -58,7 +57,7 @@ const TableRowComponent = ({
             <td className="h-12 p-2 flex flex-row items-center" style={getNestedLevelStyling()}>
                 {renderExpendableButton ? (
                     <>
-                        <ExpendableButtonComponent isOpen={isOpen} toggle={toggle}/>
+                        {rowData.inventory && <ExpendableButtonComponent isOpen={isOpen} toggle={toggle}/>}
                         {rowData.label}
                     </>
                 ) : (
